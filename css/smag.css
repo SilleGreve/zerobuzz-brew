@@ -1,0 +1,79 @@
+
+
+.boks-1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.boks-1 > section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.boks-1 article {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+/* Smagsvarianterne er sat på række to og to med tekst under */
+.smagsvariant {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    height: auto;
+    display: block;
+
+}
+
+.boks-1 .smagsvariant {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+
+.orange-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #F6BE67;
+    color: #2F6892;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.orange-button:hover {
+    background-color: #F6BE67;
+}
+
+
+/* Her er der lavet media screen til computer, som gør teksten passer bedre og er centreret bedre*/
+@media screen and (min-width: 800px) {
+    
+    .boks-1 {
+        display: flex;
+        margin: 40px 120px 40px 120px;
+
+    }
+
+
+/* Her er smagsvarianterne sat ved siden af hinanden */
+    .boks-1 {
+        display: flex;
+        flex-direction: row;
+    }
+}
