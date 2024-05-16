@@ -1,0 +1,77 @@
+ 
+
+/* Her styler jeg header navbar */
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid #2F6892;
+    justify-content: flex-end;
+}
+
+
+header ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 30px;
+}
+
+header ul li :last-child {
+    margin-right: 0;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #2F6892;
+    padding: 22px 0;
+    display: inline-block;
+    transition: all ease 0.3s;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* her sætter jeg farve ind når musen går over de enkelte */
+header ul li a:hover {
+    color: #F6BE67;
+}
+
+/* Styling af submenupunkter */
+
+header ul .submenu {
+    position: absolute;
+    width: 200px;
+    background-color: white;
+   
+    margin-top: -50px;
+    opacity: 0;
+    z-index: -999;
+    transition: all ease 0.5s;
+}
+/* Hvor dropdown er i forhold til navbar */
+header ul li:hover .submenu {
+    z-index: 99;
+    opacity: 1;
+    margin-top: 0;
+}
+
+header ul .submenu li {
+    margin: 0;
+    width: 100%;
+}
+ /* styling af submenu dropdown */
+header ul .submenu li a {
+    padding: 15px 20px;
+    display: inline-block;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
