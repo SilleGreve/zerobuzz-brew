@@ -42,6 +42,7 @@ header ul .submenu {
     position: absolute;
     width: 200px;
     background-color: white;
+    display: none;
    
     margin-top: -50px;
     opacity: 0;
@@ -53,6 +54,7 @@ header ul li:hover .submenu {
     z-index: 99;
     opacity: 1;
     margin-top: 0;
+    display: block;
 }
 
 header ul .submenu li {
@@ -103,6 +105,10 @@ header ul .submenu li a {
         display: none;
     }
     .menu-button {
+        display: block;
+    }
+
+    .sidebar ul li:hover .submenu {
         display: block;
     }
 }
