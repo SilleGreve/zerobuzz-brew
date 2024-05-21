@@ -1,10 +1,11 @@
 body {
-    margin: 5em 0 0 0;
+    margin: 2em 0 0 0;
     padding: 0;
     line-height: 1.6;
     word-spacing: 1.4px;
     color: #2F6892;
     background-color: var(--clr-light);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
  }
 
  .container {
@@ -30,7 +31,6 @@ body {
     display: grid;
     grid-template-rows: auto auto; 
     justify-items: center; 
-    gap: 5px;
 }
  /* her styler jeg knappen under billederne */
  .orange-button {
@@ -74,7 +74,7 @@ body {
  }
 
  .item.item-5 {
-    grid-area: 3/15/3/8;
+    grid-area: 3/14/3/8;
  }
 
  .item.item-6 {
@@ -87,4 +87,52 @@ body {
 
  .item.item-8 {
     grid-area: 13/4/13/4;
+ }
+
+
+ /* her styler jeg til mobilskærm */
+ @media(max-width:800px) {
+
+    .container {
+        display: grid;
+        grid-template-rows: repeat(60,50px);
+        grid-template-columns: repeat(60,50px);
+        width: 100%;
+        margin: 0 auto;
+        border: 10px solid var(--clr-dark);
+     }
+
+    .item.item-1 {
+        grid-area: 7/1/4/1;
+     }
+    
+     .item.item-2 {
+        grid-area: 6/1/6/14;
+     }
+    
+     .item.item-3 {
+        grid-area: 13/14/13/1;
+     }
+    
+     .item.item-4 {
+        grid-area: 24/1/24/4;
+     }
+    
+     .item.item-5 {
+        grid-area: 26/1/26/14;
+     }
+    
+     .item.item-6 {
+        grid-area: 32/14/32/1;
+     }
+    
+     .item.item-7 {
+        grid-area: 41/14/41/1;
+     }
+    
+     .item.item-8 {
+        grid-area: 43/14/43/1;
+     }
+    
+
  }
