@@ -74,3 +74,35 @@ body {
  .item.item-4 {
     grid-area: 6/4/6/4;
  }
+
+/* her styler jeg med displaygrid, så det passer til mobilskærm */
+
+ @media(max-width:800px) {
+
+    .container {
+        display: grid;
+        grid-template-rows: repeat(14,100px);
+        grid-template-columns: repeat(4,200px);
+        width: 100%;
+        margin: 0 auto;
+        border: 10px solid var(--clr-dark);
+     }
+
+    .item.item-1 {
+        grid-area: 2/1/2/4;
+     }
+    
+     .item.item-2 {
+        grid-area: 9/1/9/2;
+        justify-self: start;
+     }
+    
+     .item.item-3 {
+        grid-area: 10/1/10/3;
+     }
+    
+     .item.item-4 {
+        grid-area: 12/1/12/2;
+        justify-self: start;
+     }
+ }
