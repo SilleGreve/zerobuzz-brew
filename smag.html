@@ -10,33 +10,36 @@
 <body>
     
 
-<!-- her sætter jeg smagsvarianterne ind for at kunne stryle dem ordentligt til responsive har jeg sat dem ind i bokse -->
-<section class="boks-1">
-    <section>
-        <article>
-            <img src="img/havre-honning.png" alt="smagsvariant, havre og honning" class="smagsvariant">
-            <p class="orange-button">Havre & Honning</p>
-        </article>
+<!-- her er smagsvarianterne sat ind i semantiske tags, så det kan styles med display grid -->
+ <section class="container">
+    <article class="item item-1">
+        <figure class="content">
+       <img src="img/havre-honning.png" height="600px" alt="">
+       <a href="havre-honning.html"><p class="orange-button">Havre & Honning</p></a>
+        </figure>
+    </article>
+    
+    <article class="item item-2">
+        <figure class="content">
+        <img src="img/hindbær-sour.png" height="600px" alt="">
+        <a href="hindbær-sour.html"><p class="orange-button">Hindbær sour</p></a>
+        </figure>
+    </article>
 
-        <article>
-            <img src="img/hindbær-sour.png" alt="smagsvariant hindbær sour" class="smagsvariant">
-            <p class="orange-button">Hindbær sour</p>
-        </article>
-    </section>
-    <!-- Her er der sat en section mere ind til smagsvarianterne, så man i css kan sætte dem under hinanden  -->
-    <section>
-        <article>
-            <img src="img/tropiskefrugter.png" alt="smagsvariant tropiskefrugter" class="smagsvariant">
-            <p class="orange-button">Tropiskefrugter</p>
-        </article>
+    <article class="item item-3">
+        <figure class="content">
+        <img src="img/tropiskefrugter.png" height="600px" alt="">
+        <a href="tropiske-frugter.html"><p class="orange-button">Tropiske frugter</p></a>
+        </figure>
+    </article>
 
-        <article>
-            <img src="img/citrusfrugter.png" alt="smagsvariant citrusfrugter" class="smagsvariant">
-            <p class="orange-button">Citrusfrugter</p>
-        </article>
-    </section>
-</section>
-
+    <article class="item item-4">
+        <figure class="content">
+        <img src="img/citrusfrugter.png" height="600px" alt="">
+        <a href="citrusfrugter.html"> <p class="orange-button">Citrusfrugter</p></a>
+        </figure>
+    </article>
+ </section>
 
 </body>
 </html>

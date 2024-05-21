@@ -11,6 +11,13 @@ header {
     justify-content: flex-end;
 }
 
+.logo {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: flex-start;
+    
+}
 
 header ul li {
     display: inline-block;
@@ -113,7 +120,7 @@ header ul .submenu li a {
     }
 }
 
-@media(max-width: 500px) {
+@media(max-width: 700px) {
     .sidebar{
         width: 100%;
     }
