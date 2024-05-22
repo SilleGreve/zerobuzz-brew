@@ -1,0 +1,74 @@
+body {
+    margin: 5em 0 0 0;
+    padding: 0;
+    line-height: 1.6;
+    word-spacing: 1.4px;
+    color: #2F6892;
+    background-color: var(--clr-light);
+ }
+
+ .container {
+    display: grid;
+    grid-template-rows: repeat(15,100px);
+    grid-template-columns: repeat(15,100px);
+    width: 100%;
+    margin: 0 auto;
+    border: 10px solid var(--clr-dark);
+ }
+
+ .item {
+    padding: 0.5rem;
+    background-color: white;
+    font-weight: 700;
+    color: #2F6892;
+    display: grid;
+    place-items: center;
+ }
+
+ /* her styler jeg afstanden mellem gridelementerne  */
+ .content {
+    display: grid;
+    grid-template-rows: auto auto; 
+    justify-items: center; 
+}
+
+/* her styler jeg grid elementerne */
+.item.item-1 {
+    grid-area: 4/3/3/1;
+ }
+
+ .item.item-2 {
+    grid-area: 4/8/4/1;
+ }
+
+ .item.item-3 {
+    grid-area: 3/9/8/8;
+ }
+
+
+
+ /* her styler jeg til mobilskærm */
+ @media(max-width:800px) {
+
+    .container {
+        display: grid;
+        grid-template-rows: repeat(60,50px);
+        grid-template-columns: repeat(60,50px);
+        width: 100%;
+        margin: 0 auto;
+        border: 10px solid var(--clr-dark);
+        }
+
+        .item.item-1 {
+            grid-area: 4/3/3/1;
+         }
+        
+         .item.item-2 {
+            grid-area: 5/12/5/1;
+         }
+        
+         .item.item-3 {
+            grid-area: 14/1/14/8;
+         }
+        
+     }
