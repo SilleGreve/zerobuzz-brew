@@ -4,7 +4,6 @@
 header {
     background-color: white;
     display: flex;
-    
     align-items: center;
     width: 100%;
     border-bottom: 1px solid #2F6892;
@@ -17,81 +16,55 @@ header {
     padding: 0 20px;
 }
 
-
+/* størrelsen på navbar */
 main {
     margin-top: 120px;
 }
 
+/* Her styler jeg placering af logo */
 nav {
     display: flex; /* Gør nav til flex container */
     align-items: center; /* Juster elementer vertikalt */
     width: 100%; /* Fyld den resterende plads */
 }
 
+/* Her styler jeg logoet i navbar */
 .logo {
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
     display: flex;
     justify-content: flex-start;
 }
 
-header ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 0 30px;
-}
-
+/* 
 header ul li :last-child {
     margin-right: 0;
 }
+ */
 
-header ul li a {
-    text-decoration: none;
-    color: #2F6892;
-    padding: 22px 0;
-    display: inline-block;
-    transition: all ease 0.3s;
-    font-size: 20px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
+
 /* her sætter jeg farve ind når musen går over de enkelte */
 header ul li a:hover {
     color: #F6BE67;
 }
 
-/* Styling af submenupunkter */
-
-header ul .submenu {
-    position: absolute;
-    width: 200px;
-    background-color: white;
-    display: none;
-   
-    margin-top: -50px;
-    opacity: 0;
-    z-index: -999;
-    transition: all ease 0.5s;
-}
-/* Hvor dropdown er i forhold til navbar */
-header ul li:hover .submenu {
-    z-index: 99;
-    opacity: 1;
-    margin-top: 0;
-    display: block;
-}
-
+/* 
 header ul .submenu li {
     margin: 0;
     width: 100%;
 }
- /* styling af submenu dropdown */
+ */
+ 
+
+ /* styling af submenu dropdown
 header ul .submenu li a {
-    padding: 15px 20px;
+    padding: 20px 20px;
     display: inline-block;
     width: 100%;
 }
+ */
 
-
+ /* Sryling af placering på menupunkterne til venstre */
 nav ul {
     display: flex; 
     list-style: none;
@@ -100,16 +73,21 @@ nav ul {
     margin-right: 30px;
 }
 
+/*  
 nav ul li {
     display: inline-block;
     list-style: none;
     margin: 0 30px;
 }
+*/
 
+/* 
 nav ul li:last-child {
     margin-right: 0;
 }
-
+ */
+ 
+ /* 
 nav ul li a {
     text-decoration: none;
     color: #2F6892;
@@ -119,13 +97,10 @@ nav ul li a {
     font-size: 20px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+ */
 
-/* her sætter jeg farve ind når musen går over de enkelte */
-nav ul li a:hover {
-    color: #F6BE67;
-}
 
-/* Styling af submenupunkter */
+/* Styling af submenupunkter 
 nav ul .submenu {
     position: absolute;
     width: 200px;
@@ -136,27 +111,30 @@ nav ul .submenu {
     z-index: -999;
     transition: all ease 0.5s;
 }
+*/
 
-/* Hvor dropdown er i forhold til navbar */
+/* Hvor dropdown er i forhold til navbar 
 nav ul li:hover .submenu {
     z-index: 99;
     opacity: 1;
     margin-top: 0;
     display: block;
 }
+*/
 
+/* Placering af li i submenu, de sidder ude i siden */
 nav ul .submenu li {
     margin: 0;
     width: 100%;
 }
 
-/* styling af submenu dropdown */
+/* styling af submenu dropdown mellemrum mellem submenupunkterne */
 nav ul .submenu li a {
-    padding: 15px 20px;
+    padding: 20px 10px;
     display: inline-block;
     width: 100%;
+    font-size: 18px;
 }
-
 
 
 /* her styler jeg navbar til mobil */
@@ -186,6 +164,44 @@ nav ul .submenu li a {
 
 .menu-button {
     display: none;
+}
+
+/* Her styler jeg submenupunkterne til mobilskærm */
+header ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 30px;
+}
+
+/* Menupunkterne på mobilstørrelse */
+header ul li a {
+    text-decoration: none;
+    color: #2F6892;
+    padding: 22px 0;
+    display: inline-block;
+    transition: all ease 0.3s;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Styling af submenupunkter, de forsvinder når musen ikke er over */
+header ul .submenu {
+    position: absolute;
+    width: 200px;
+    background-color: white;
+    display: none;
+    margin-top: -50px;
+    opacity: 0;
+    z-index: -999;
+    transition: all ease 0.5s;
+}
+
+/* Dropdown i submenu */
+header ul li:hover .submenu {
+    z-index: 99;
+    opacity: 1;
+    margin-top: 0;
+    display: block;
 }
 
 @media(max-width:800px) {
