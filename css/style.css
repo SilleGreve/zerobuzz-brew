@@ -73,6 +73,29 @@ nav ul {
     margin-right: 30px;
 }
 
+/* Menupunkterne styles så de er korrekte i udseende ud fra mock up */
+header ul li a {
+    text-decoration: none;
+    color: #2F6892;
+    padding: 22px 0;
+    display: inline-block;
+    transition: all ease 0.3s;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Styling af submenupunkter, de forsvinder når musen ikke er over og de står rigtigt */
+header ul .submenu {
+    position: absolute;
+    width: 200px;
+    background-color: white;
+    display: none;
+    margin-top: -50px;
+    opacity: 0;
+    z-index: -999;
+    transition: all ease 0.5s;
+}
+
 /*  
 nav ul li {
     display: inline-block;
@@ -128,17 +151,30 @@ nav ul .submenu li {
     width: 100%;
 }
 
-/* styling af submenu dropdown mellemrum mellem submenupunkterne */
+/* styling af submenu dropdown mellemrum mellem submenupunkterne 
 nav ul .submenu li a {
     padding: 20px 10px;
     display: inline-block;
     width: 100%;
     font-size: 18px;
 }
+*/
+
+/* Dropdown i submenu */
+header ul li:hover .submenu {
+    z-index: 99;
+    opacity: 1;
+    margin-top: 0;
+    display: block;
+}
+
+/* Fjerner burgermenu fra stor skærm */
+.menu-button {
+    display: none;
+}
 
 
 /* her styler jeg navbar til mobil */
-
 .sidebar {
     position: fixed;
     top: 0;
@@ -162,47 +198,14 @@ nav ul .submenu li a {
     width: 100%;
 }
 
-.menu-button {
-    display: none;
-}
-
-/* Her styler jeg submenupunkterne til mobilskærm */
+/* Her styler jeg submenupunkterne til mobilskærm så de ikke er i punktform og placeringen af dem i navbaren på mobilen*/
 header ul li {
     display: inline-block;
-    list-style: none;
-    margin: 0 30px;
+    list-style: none; /*  Fjerner punktform*/
+    margin: 0 70px; 
+    padding-top: 20px; /* Giver plads til menupunkterne fra krydset*/
 }
 
-/* Menupunkterne på mobilstørrelse */
-header ul li a {
-    text-decoration: none;
-    color: #2F6892;
-    padding: 22px 0;
-    display: inline-block;
-    transition: all ease 0.3s;
-    font-size: 18px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-/* Styling af submenupunkter, de forsvinder når musen ikke er over */
-header ul .submenu {
-    position: absolute;
-    width: 200px;
-    background-color: white;
-    display: none;
-    margin-top: -50px;
-    opacity: 0;
-    z-index: -999;
-    transition: all ease 0.5s;
-}
-
-/* Dropdown i submenu */
-header ul li:hover .submenu {
-    z-index: 99;
-    opacity: 1;
-    margin-top: 0;
-    display: block;
-}
 
 @media(max-width:800px) {
     .hideOnMobile{
@@ -215,13 +218,13 @@ header ul li:hover .submenu {
     .sidebar ul li:hover .submenu {
         display: block;
     }
-}
-
-@media(max-width: 700px) {
     .sidebar{
         width: 100%;
+        margin-top: 0;
+        padding: 20px;
     }
 }
+
 
 
 
