@@ -12,7 +12,7 @@
 
  .container {
     display: grid;
-    grid-template-rows: repeat(4,900px);
+    grid-template-rows: repeat(1,900px);
     grid-template-columns: repeat(4,360px);
     width: 100%;
     margin: 0 auto;
@@ -78,6 +78,16 @@
  /* her styler jeg med displaygrid, så det passer til mobilskærm */
 
  @media(max-width:800px) {
+
+   .container {
+      display: grid;
+      grid-template-rows: repeat(2,900px);
+      grid-template-columns: repeat(4,360px);
+      width: 100%;
+      margin: 0 auto;
+      border: 10px solid var(--clr-dark);
+   }
+
 
     .item.item-1 {
         grid-area: 1/1/2/2;

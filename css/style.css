@@ -189,7 +189,7 @@ body {
 
  .container-forside {
     display: grid;
-    grid-template-rows: repeat(14,100px);
+    grid-template-rows: repeat(13,100px);
     grid-template-columns: repeat(30,100px);
     width: 100%;
     margin: 0 auto;

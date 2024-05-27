@@ -9,7 +9,7 @@ body {
 
  .container {
     display: grid;
-    grid-template-rows: repeat(15,100px);
+    grid-template-rows: repeat(9,100px);
     grid-template-columns: repeat(15,100px);
     width: 100%;
     margin: 0 auto;
@@ -34,15 +34,15 @@ body {
 
 /* her styler jeg grid elementerne */
 .item.item-1 {
-    grid-area: 4/3/3/1;
+    grid-area: 4/2/3/2;
  }
 
  .item.item-2 {
-    grid-area: 4/8/4/1;
+    grid-area: 4/8/4/2;
  }
 
  .item.item-3 {
-    grid-area: 3/9/8/8;
+    grid-area: 3/9/3/9;
  }
 
 
@@ -52,7 +52,7 @@ body {
 
     .container {
         display: grid;
-        grid-template-rows: repeat(60,50px);
+        grid-template-rows: repeat(26,55px);
         grid-template-columns: repeat(60,50px);
         width: 100%;
         margin: 0 auto;
@@ -60,15 +60,15 @@ body {
         }
 
         .item.item-1 {
-            grid-area: 4/3/3/1;
+            grid-area: 4/3/3/2;
          }
         
          .item.item-2 {
-            grid-area: 5/13/5/1;
+            grid-area: 4/15/4/2;
          }
         
          .item.item-3 {
-            grid-area: 14/1/14/8;
+            grid-area: 12/2/12/9;
          }
         
      }
