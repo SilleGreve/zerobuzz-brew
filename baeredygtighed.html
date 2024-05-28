@@ -9,22 +9,130 @@
 </head>
 <body>
 
-    <!-- Jeg sætter elementerne ind i sectioner og giver dem en class, for at kunne flytte rundt på dem med display grid -->
-    <!-- Her er overskriften -->
-    <section class="container">
-        <article class="item item-1">
-                <h3>Bæredygtighed</h3>
+    <!-- Her er min navbar, hvor jeg har brugt semantiske tags for at lave den -->
+    <header>
+        <nav>
+            <a href="index.html"><img class="logo" src="img/logo.png" alt=""></a>
+        <ul>
+            <li class="hideOnMobile"> <a href="smag.html">Smag </a>
+                <ul class="submenu">
+                    <li><a href="smag.html">Varianter</a></li>
+                    <li><a href="#">Hvor kan de købes</a></li>
+                    <li><a href="#">Opskrifter</a></li>
+                </ul>
+           </li>
+            <li class="hideOnMobile"> <a href="sundhed.html">Sundhed</a>
+                <ul class="submenu">
+                    <li><a href="sundhed.html">Indgredienser</a></li>
+                    <li><a href="#">Kcal</a></li>
+                    <li><a href="#">Vitaminer</a></li>
+                    <li><a href="#">Hydreringsegenskaber</a></li>
+                    <li><a href="#">Dagen derpå</a></li>
+                </ul>
+            </li>
+            <li class="hideOnMobile"> <a href="baeredygtighed.html">Bæredygtighed</a>
+                <ul class="submenu">
+                    <li><a href="#">Ansvarlighed</a></li>
+                    <li><a href="#">Lokalt</a></li>
+                    <li><a href="baeredygtighed.html">Produktion</a></li>
+                    <li><a href="#">Emballage</a></li>
+                </ul>
+            </li>
+            <li class="hideOnMobile"> <a href="#">Arrangementer</a>
+                <ul class="submenu">
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Sociale medier</a></li>
+                    <li><a href="#">B2B</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+            </li>
+           <li class="menu-button" onclick=showSidebar()><img src="img/burger.svg" height="35" width="35" alt="burgermenu navbar"></li>
+        </ul>
+    </nav>
+    
+
+
+<!-- Her er navbar til mobil -->
+    <ul class="sidebar">
+        <li onclick=hideSidebar()><img src="img/cross.svg" height="35" width="35" alt="luk burgermenu"></li>
+        <li> <a href="#">Smag </a>
+            <ul class="submenu">
+                <li><a href="smag.html">Varianter</a></li>
+                <li><a href="#">Hvor kan de købes</a></li>
+                <li><a href="#">Opskrifter</a></li>
+            </ul>
+       </li>
+        <li> <a href="#">Sundhed</a>
+            <ul class="submenu">
+                <li><a href="sundhed.html">Ingredienser</a></li>
+                <li><a href="#">Kcal</a></li>
+                <li><a href="#">Vitaminer</a></li>
+                <li><a href="#">Hydreringsegenskaber</a></li>
+                <li><a href="#">Dagen derpå</a></li>
+            </ul>
+        </li>
+        <li> <a href="#">Bæredygtighed</a>
+            <ul class="submenu">
+                <li><a href="#">Ansvarlighed</a></li>
+                <li><a href="#">Lokalt</a></li>
+                <li><a href="baeredygtighed.html">Produktion</a></li>
+                <li><a href="#">Emballage</a></li>
+            </ul>
+        </li>
+        <li> <a href="#">Arrangementer</a>
+            <ul class="submenu">
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Sociale medier</a></li>
+                <li><a href="#">B2B</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </li>
+    </ul>
+    </header>
+
+
+<!-- Jeg sætter elementerne ind i sectioner og giver dem en class, for at kunne flytte rundt på dem med display grid -->
+<!-- Her er overskriften -->
+<section class="container">
+    <article class="item item-1">
+        <h3>Bæredygtighed</h3>
+    </article>
+
+    <!-- Her er brødteksten -->
+    <article class="item item-2">
+        <p>En økologisk produktion fører til en bæredygtig produktion. Hos ZeroBuzz Brew prioriterer vi en bæredygtig produktion via renere produktionspraksis og gode landbrugmetoder. Vi anvender ikke kemiske pesticider eller syntetiske gødninger, men anvender økologiske bryggerier med naturlige midler som vores malt og frugter vi bruger i øllet.</p>
+        <p>Økologi beskytter de lokale økosystemer og dyrelivet hvilket fører til en mere bæredygtig produktion, og ved at investere i økologiske metoder er vi med til at sikre at vores produktionsgrundlag forbliver sundt og produktivt. Her er det ikke kun vores ingredienser der er i fokus, men også vores energiforbrug, affaldsminimering og overordnet bæredygtighed. Det vil gøre det muligt for dig at nyde vores øl som ikke kun smager godt med også gør noget godt for planeten.</p>
+    </article>
+
+    <!-- Her er billedet -->
+    <article class="item item-3">
+        <img src="img/buy-local.png" alt="Bæredygtighed">
+    </article>
+</section>
+
+<!-- Her er footer -->
+<footer>
+    <section class="container-footer">
+        <article class="item-footer item-1-footer">
+            <h5>ZeroBuzz Brew</h5>
+            <h5>ZeroBuzz@Brew.com</h5>
         </article>
-        <!-- Her er brødteksten -->
-        <section class="container">
-            <article class="item item-2">
-                    <p>En økologisk produktion fører til en bæredygtig produktion. Hos ZeroBuzz Brew prioriterer vi en bæredygtig produktion via renere produktionspraksis og gode landbrugmetoder. Vi anvender ikke kemiske pesticider eller syntetiske gødninger, men anvender økologiske bryggerier med naturlige midler som vores malt og frugter vi bruger i øllet.</p>
-                    <p>Økologi beskytter de lokale økosystemer og dyrelivet hvilket fører til en mere bæredygtig produktion, og ved at investere i økologiske metoder er vi med til at sikre at vores produktionsgrundlag forbliver sundt og produktivt. Her er det ikke kun vores ingredienser der er i fokus, men også vores energiforbrug, affaldsminimering og overordnet bæredygtighed. Det vil gøre det muligt for dig at nyde vores øl som ikke kun smager godt med også gør noget godt for planeten.</p>
+
+        <article class="item-footer item-2-footer">
+            <h5>+45 24 56 78 90</h5>
+            <h5>Møllevangs Allé 145 8200 Aarhus</h5>
+        </article>
+
+        <article class="item-footer item-3-footer">
+        <img src="img/icons-first.png" height="60" alt="ikoner til medier">
+        </article>
+
+        <article class="item-footer item-4-footer">
+            <img src="img/icons-second.png" height="60" alt="ikoner til medier">
             </article>
-            <!-- Her er billedet -->
-            <section class="container">
-                <article class="item item-3">
-                        <img src="img/buy-local.png" alt="">
-                </article>
+    </section>
+</footer>
+
+
 </body>
 </html>

@@ -72,7 +72,7 @@ body {
  }
 
  .item.item-4 {
-    grid-area: 6/4/6/4;
+    grid-area: 6/5/6/5;
  }
 
 /* her styler jeg med displaygrid, så det passer til mobilskærm */
@@ -102,7 +102,7 @@ body {
      }
     
      .item.item-4 {
-        grid-area: 21/1/21/2;
+        grid-area: 20/2/20/2;
         justify-self: start;
      }
 

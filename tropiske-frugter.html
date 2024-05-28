@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="da">
 <head>
     <meta charset="UTF-8">
@@ -7,30 +8,131 @@
     <link rel="stylesheet" href="css/varianter.css">
 </head>
 <body>
+
+<!-- Her er min navbar, hvor jeg har brugt semantiske tags for at lave den -->
+<header>
+    <nav>
+        <a href="index.html"><img class="logo" src="img/logo.png" alt="ZeroBuzz Brew logo"></a>
+        <ul>
+            <li class="hideOnMobile"> <a href="smag.html">Smag </a>
+                <ul class="submenu">
+                    <li><a href="smag.html">Varianter</a></li>
+                    <li><a href="#">Hvor kan de købes</a></li>
+                    <li><a href="#">Opskrifter</a></li>
+                </ul>
+            </li>
+            <li class="hideOnMobile"> <a href="sundhed.html">Sundhed</a>
+                <ul class="submenu">
+                    <li><a href="sundhed.html">Ingredienser</a></li>
+                    <li><a href="#">Kcal</a></li>
+                    <li><a href="#">Vitaminer</a></li>
+                    <li><a href="#">Hydreringsegenskaber</a></li>
+                    <li><a href="#">Dagen derpå</a></li>
+                </ul>
+            </li>
+            <li class="hideOnMobile"> <a href="baeredygtighed.html">Bæredygtighed</a>
+                <ul class="submenu">
+                    <li><a href="#">Ansvarlighed</a></li>
+                    <li><a href="#">Lokalt</a></li>
+                    <li><a href="baeredygtighed.html">Produktion</a></li>
+                    <li><a href="#">Emballage</a></li>
+                </ul>
+            </li>
+            <li class="hideOnMobile"> <a href="#">Arrangementer</a>
+                <ul class="submenu">
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Sociale medier</a></li>
+                    <li><a href="#">B2B</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+            </li>
+            <li class="menu-button" onclick="showSidebar()"><img src="img/burger.svg" height="35" width="35" alt="burgermenu navbar"></li>
+        </ul>
+    </nav>
+
+    <!-- Her er navbar til mobil -->
+    <ul class="sidebar">
+        <li onclick="hideSidebar()"><img src="img/cross.svg" height="35" width="35" alt="luk burgermenu"></li>
+        <li> <a href="#">Smag </a>
+            <ul class="submenu">
+                <li><a href="smag.html">Varianter</a></li>
+                <li><a href="#">Hvor kan de købes</a></li>
+                <li><a href="#">Opskrifter</a></li>
+            </ul>
+       </li>
+        <li> <a href="#">Sundhed</a>
+            <ul class="submenu">
+                <li><a href="sundhed.html">Ingredienser</a></li>
+                <li><a href="#">Kcal</a></li>
+                <li><a href="#">Vitaminer</a></li>
+                <li><a href="#">Hydreringsegenskaber</a></li>
+                <li><a href="#">Dagen derpå</a></li>
+            </ul>
+        </li>
+        <li> <a href="#">Bæredygtighed</a>
+            <ul class="submenu">
+                <li><a href="#">Ansvarlighed</a></li>
+                <li><a href="#">Lokalt</a></li>
+                <li><a href="baeredygtighed.html">Produktion</a></li>
+                <li><a href="#">Emballage</a></li>
+            </ul>
+        </li>
+        <li> <a href="#">Arrangementer</a>
+            <ul class="submenu">
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Sociale medier</a></li>
+                <li><a href="#">B2B</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </li>
+    </ul>
+</header>
+
+
 <!-- Her har jeg sat billede ind til variant -->
-    <section class="container">
-        <article class="item item-1">
-            <img src="img/tropiskefrugter.png" height="600px" alt="">
+<section class="container">
+    <article class="item item-1">
+        <img src="img/tropiskefrugter.png" height="600" alt="Tropiske frugter">
+    </article>
+
+    <!-- Her er overskriften -->
+    <article class="item item-2">
+        <h3>Tropiske frugter</h3>
+    </article>
+    
+    <!-- Kort tekst om variant -->
+    <article class="item item-3">
+        <p>En eksotisk og saftig smag, der omfatter frugter som ananas, mango og passionsfrugt. Denne smagsvariant tilføjer en frisk og frugtagtig smag til øllet, der giver associationer til varme sommeraftner og gode dage med vennerne.</p>
+    </article>
+    
+    <!-- Knap så man kan komme tilbage til alle varianter -->
+    <article class="item item-4">
+        <a href="smag.html"><p class="orange-button">Smagsvarianter</p></a>
+    </article>
+</section>
+
+<!-- Her er footer -->
+<footer>
+    <section class="container-footer">
+        <article class="item-footer item-1-footer">
+            <h5>ZeroBuzz Brew</h5>
+            <h5>ZeroBuzz@Brew.com</h5>
         </article>
 
-<!-- Her er overskriften -->
-    <section class="container">
-        <article class="item item-2">
-            <h3>Tropiske frugter</h3>
+        <article class="item-footer item-2-footer">
+            <h5>+45 24 56 78 90</h5>
+            <h5>Møllevangs Allé 145 8200 Aarhus</h5>
         </article>
-<!-- Kort tekst om variant -->
-        <section class="container">
-            <article class="item item-3">
-                <p>En eksotisk og saftig smag, der omfatter frugter som ananas, mango og passionsfrugt. Denne smagsvariant tilføjer en frisk og frugtagtig smag til øllet, der giver associationer til varme sommeraftner og gode dage med vennerne.</p>
-            </article>
-        </section>
-<!-- Knap så man kan komme tilbage til alle varianter -->
-        <section class="container">
-            <article class="item item-4">
-                <a href="smag.html"><p class="orange-button">Smagsvarianter</p></a>
 
+        <article class="item-footer item-3-footer">
+        <img src="img/icons-first.png" height="60" alt="ikoner til medier">
+        </article>
+
+        <article class="item-footer item-4-footer">
+            <img src="img/icons-second.png" height="60" alt="ikoner til medier">
             </article>
-        </section>
-        
+    </section>
+</footer>
+
 </body>
 </html>
