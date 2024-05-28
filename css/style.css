@@ -23,9 +23,9 @@ main {
 
 /* Her styler jeg placering af logo */
 nav {
-    display: flex; /* Gør nav til flex container */
-    align-items: center; /* Juster elementer vertikalt */
-    width: 100%; /* Fyld den resterende plads */
+    display: flex; 
+    align-items: center; 
+    width: 100%; 
 }
 
 /* Her styler jeg logoet i navbar */
@@ -37,28 +37,13 @@ nav {
 }
 
 
-/* her sætter jeg farve ind når musen går over de enkelte */
+/* Her sætter jeg farve ind når musen går over de enkelte */
 header ul li a:hover {
     color: #F6BE67;
 }
 
-/* 
-header ul .submenu li {
-    margin: 0;
-    width: 100%;
-}
- */
- 
 
- /* styling af submenu dropdown
-header ul .submenu li a {
-    padding: 20px 20px;
-    display: inline-block;
-    width: 100%;
-}
- */
-
- /* Sryling af placering på menupunkterne til venstre */
+ /* Styling af placering på menupunkterne til venstre */
 nav ul {
     display: flex; 
     list-style: none;
@@ -71,7 +56,7 @@ nav ul {
 header ul li a {
     text-decoration: none;
     color: #2F6892;
-    padding: 22px 0;
+    padding: 20px 0;
     display: inline-block;
     transition: all ease 0.3s;
     font-size: 18px;
@@ -119,20 +104,23 @@ header ul li:hover .submenu {
 }
 
 
-/* her styler jeg navbar til mobil */
+
+
+/* Her styler jeg navbar til mobil */
+
+/* Denne giver min sidebar den rette styling i forhold til hvordan den skal være på siden, og hvor meget den fylder, denne retter også hvor menupunkterne står */
 .sidebar {
     position: fixed;
     top: 0;
     right: 0;
     height: 100vh;
-    width: 200px;
+    width: 200px; /* Ændret fra 200px for at den ikke er synlig på computerskærm*/
     z-index: 999;
     background-color: white;
-    box-shadow: #F6BE67;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+    /* align-items: flex-start; */
+    /* justify-content: flex-start; */
 }
 
 .sidebar li {
@@ -141,6 +129,7 @@ header ul li:hover .submenu {
 
 .sidebar a {
     width: 100%;
+  
 }
 
 /* Her styler jeg submenupunkterne til mobilskærm så de ikke er i punktform og placeringen af dem i navbaren på mobilen*/
@@ -162,14 +151,25 @@ header ul li {
 
     .sidebar ul li:hover .submenu {
         display: block;
+        padding: 0;
+        margin: 0;
     }
     .sidebar{
         width: 100%;
         margin-top: 0;
         padding: 20px;
+        display: none; /* Starter på forside og ikke i burgerbar */
     }
 }
 
+/* Fjerner submenu fra computerskærm */
+@media(min-width:800px) {
+
+.sidebar {
+    display: none;
+}
+
+}
 
 
 
