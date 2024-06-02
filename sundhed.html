@@ -47,7 +47,7 @@
                 <li><a href="#">Kontakt</a></li>
             </ul>
         </li>
-       <li class="menu-button" onclick=showSidebar()><img src="img/burger.svg" height="35" width="35" alt="burgermenu navbar"></li>
+        <li class="menu-button" onclick=showSidebar()><img src="img/burger.svg" height="35" width="35" alt="burgermenu navbar"></li>
     </ul>
 </nav>
 
@@ -167,5 +167,17 @@
         </section>
     </footer>
    
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+
+    </script>
+    
 </body>
 </html>
