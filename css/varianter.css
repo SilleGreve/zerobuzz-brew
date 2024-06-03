@@ -4,7 +4,6 @@ body {
     line-height: 1.6;
     word-spacing: 1.4px;
     color: black;
-    background-color: var(--clr-light);
  }
 
  .container {
@@ -13,7 +12,6 @@ body {
     grid-template-columns: repeat(6,200px);
     width: 100%;
     margin: 0 auto;
-    border: 10px solid var(--clr-dark);
  }
 
  .item {
@@ -85,7 +83,6 @@ body {
         grid-template-columns: repeat(14,100px);
         width: 100%;
         margin: 0 auto;
-        border: 10px solid var(--clr-dark);
      }
 
     .item.item-1 {

@@ -7,7 +7,6 @@
     line-height: 1.6;
     word-spacing: 1.4px;
     color: #2F6892;
-    background-color: var(--clr-light);
  }
 
  .container {
@@ -16,7 +15,6 @@
     grid-template-columns: repeat(4,360px);
     width: 100%;
     margin: 0 auto;
-    border: 10px solid var(--clr-dark);
  }
 
  .item {
@@ -85,7 +83,6 @@
       grid-template-columns: repeat(4,360px);
       width: 100%;
       margin: 0 auto;
-      border: 10px solid var(--clr-dark);
    }
 
 
