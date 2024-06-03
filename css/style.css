@@ -207,13 +207,13 @@ body {
     place-items: center;
  }
 
- /* her styler jeg afstanden mellem gridelementerne  */
+ /* Her styler jeg afstanden mellem gridelementerne  */
  .content-forside {
     display: grid;
     grid-template-rows: auto auto; 
     justify-items: center; 
 }
- /* her styler jeg knappen under billederne */
+ /* Her styler jeg knappen under billederne */
  .orange-button-forside {
         padding: 10px 65px;
         background-color: #F6BE67;
@@ -225,13 +225,13 @@ body {
         cursor: pointer;
         transition: background-color 0.3s;
     }
-    /* dette er knappen */
+    /* Dette er knappen */
     .orange-button:hover {
         background-color: #F6BE67;
         color: #2F6892;
        
     }
- /* her fjerner jeg understregen i linket */
+ /* Her fjerner jeg understregen i linket */
     .item a {
      text-decoration: none;
     }
@@ -292,10 +292,8 @@ body {
  }
 
 
+
  /* Her styler jeg footer med grid */
-
-
-
 .container-footer {
     display: grid;
     grid-template-rows: repeat(5,50px);
@@ -344,7 +342,6 @@ body {
         border: 10px solid var(--clr-dark);
      }
 
-    
 
      .item-footer.item-1-footer {
         grid-area: 2/2/2/3;

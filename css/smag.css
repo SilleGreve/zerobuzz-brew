@@ -28,14 +28,14 @@
     place-items: center;
  }
 
- /* her styler jeg afstanden mellem gridelementerne  */
+ /* Her styler jeg afstanden mellem gridelementerne  */
  .content {
     display: grid;
     grid-template-rows: auto auto; 
     justify-items: center; 
     gap: 15px;
 }
- /* her styler jeg knappen under billederne */
+ /* Her styler jeg knappen under billederne */
  .orange-button {
         padding: 10px 65px;
         background-color: #F6BE67;
@@ -47,18 +47,18 @@
         cursor: pointer;
         transition: background-color 0.3s;
     }
-    /* dette er knappen */
+    /* Dette er knappen */
     .orange-button:hover {
         background-color: #F6BE67;
         color: #2F6892;
        
     }
- /* her fjerner jeg understregen i linket */
+ /* Her fjerner jeg understregen i linket */
     .item a {
      text-decoration: none;
     }
  
-/* her styler jeg grid elementerne */
+/* Her styler jeg grid elementerne */
  .item.item-1 {
     grid-area: 1/1/2/2;
  }
@@ -75,7 +75,7 @@
     grid-area: 1/4/2/5;
  }
 
- /* her styler jeg med displaygrid, så det passer til mobilskærm */
+ /* Her styler jeg med displaygrid, så det passer til mobilskærm */
 
  @media(max-width:800px) {
 
