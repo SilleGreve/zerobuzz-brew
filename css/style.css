@@ -236,6 +236,10 @@ body {
      text-decoration: none;
     }
 
+    .img-kasse {
+        height: 700px;
+    }
+
 
 /* Her styler jeg grid elementerne */
 .item.item-1-forside {
